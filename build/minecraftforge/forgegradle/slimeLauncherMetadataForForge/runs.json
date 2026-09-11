@@ -1,0 +1,117 @@
+{
+  "client": {
+    "name": "client",
+    "main": "net.minecraftforge.bootstrap.ForgeBootstrap",
+    "parents": [],
+    "args": [
+      "--gameDir",
+      ".",
+      "--launchTarget",
+      "forge_userdev_client",
+      "--version",
+      "MOD_DEV",
+      "--assetIndex",
+      "{asset_index}",
+      "--assetsDir",
+      "{assets_root}"
+    ],
+    "jvmArgs": [
+      "-Djava.net.preferIPv6Addresses\u003dsystem"
+    ],
+    "client": true,
+    "buildAllProjects": false,
+    "env": {
+      "MCP_MAPPINGS": "{mcp_mappings}"
+    },
+    "props": {
+      "forge.enableGameTest": "true"
+    }
+  },
+  "clientData": {
+    "name": "clientData",
+    "main": "net.minecraftforge.bootstrap.ForgeBootstrap",
+    "parents": [],
+    "args": [
+      "--gameDir",
+      ".",
+      "--launchTarget",
+      "forge_userdev_client_data",
+      "--assetIndex",
+      "{asset_index}",
+      "--assetsDir",
+      "{assets_root}"
+    ],
+    "jvmArgs": [
+      "-Djava.net.preferIPv6Addresses\u003dsystem"
+    ],
+    "client": true,
+    "buildAllProjects": false,
+    "env": {
+      "MCP_MAPPINGS": "{mcp_mappings}"
+    }
+  },
+  "data": {
+    "name": "data",
+    "main": "net.minecraftforge.bootstrap.ForgeBootstrap",
+    "parents": [],
+    "args": [
+      "--gameDir",
+      ".",
+      "--launchTarget",
+      "forge_userdev_data",
+      "--assetIndex",
+      "{asset_index}",
+      "--assetsDir",
+      "{assets_root}"
+    ],
+    "jvmArgs": [
+      "-Djava.net.preferIPv6Addresses\u003dsystem"
+    ],
+    "client": false,
+    "buildAllProjects": false,
+    "env": {
+      "MCP_MAPPINGS": "{mcp_mappings}"
+    }
+  },
+  "gameTestServer": {
+    "name": "gameTestServer",
+    "main": "net.minecraftforge.bootstrap.ForgeBootstrap",
+    "parents": [],
+    "args": [
+      "--gameDir",
+      ".",
+      "--launchTarget",
+      "forge_userdev_server_gametest"
+    ],
+    "jvmArgs": [
+      "-Djava.net.preferIPv6Addresses\u003dsystem"
+    ],
+    "client": false,
+    "buildAllProjects": false,
+    "env": {
+      "MCP_MAPPINGS": "{mcp_mappings}"
+    }
+  },
+  "server": {
+    "name": "server",
+    "main": "net.minecraftforge.bootstrap.ForgeBootstrap",
+    "parents": [],
+    "args": [
+      "--gameDir",
+      ".",
+      "--launchTarget",
+      "forge_userdev_server"
+    ],
+    "jvmArgs": [
+      "-Djava.net.preferIPv6Addresses\u003dsystem"
+    ],
+    "client": false,
+    "buildAllProjects": false,
+    "env": {
+      "MCP_MAPPINGS": "{mcp_mappings}"
+    },
+    "props": {
+      "forge.enableGameTest": "true"
+    }
+  }
+}

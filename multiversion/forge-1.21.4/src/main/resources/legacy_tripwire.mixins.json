@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "cn.kynarain.legacy_tripwire.mixin",
+  "mixins": [
+    "TripWireHookBlockMixin",
+    "TripWireBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "mappings.channel": "official",
+  "mappings.csv.artifact": "net.minecraft:mappings_official:1.21.11-20251223.124241@zip",
+  "mappings.csv.file": "C:\\Users\\kynar\\.gradle\\caches\\minecraftforge\\forgegradle\\mavenizer\\caches\\mcp\\de\\oceanlabs\\mcp\\mcp_config\\1.21.11-20251223.124241\\data\\mapings\\official\\1.21.11\\official.zip",
+  "mappings.obf.artifact": "net.minecraft:mappings_official:1.21.11-20251223.124241:map2obf@tsrg.gz",
+  "mappings.obf.file": "C:\\Users\\kynar\\.gradle\\caches\\minecraftforge\\forgegradle\\mavenizer\\caches\\mcp\\de\\oceanlabs\\mcp\\mcp_config\\1.21.11-20251223.124241\\data\\mapings\\official\\1.21.11\\official-1.21.11-srg.tsrg.gz",
+  "mappings.srg.artifact": "net.minecraft:mappings_official:1.21.11-20251223.124241:map2srg@tsrg.gz",
+  "mappings.srg.file": "C:\\Users\\kynar\\.gradle\\caches\\minecraftforge\\forgegradle\\mavenizer\\caches\\mcp\\de\\oceanlabs\\mcp\\mcp_config\\1.21.11-20251223.124241\\data\\mapings\\official\\1.21.11\\official-1.21.11-obf.tsrg.gz",
+  "mappings.version": "1.21.11",
+  "mc.version": "1.21.11",
+  "mcp.artifact": "de.oceanlabs.mcp:mcp_config:1.21.11-20251223.124241@zip",
+  "mcp.version": "1.21.11-20251223.124241",
+  "patcher.modules": "",
+  "spec": "1"
+}

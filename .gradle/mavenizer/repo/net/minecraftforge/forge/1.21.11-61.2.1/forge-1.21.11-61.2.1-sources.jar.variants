@@ -1,0 +1,26 @@
+[
+  {
+    "name": "sources",
+    "attributes": {
+      "net.minecraftforge.mappings.channel": "official",
+      "net.minecraftforge.mappings.version": "1.21.11",
+      "org.gradle.category": "documentation",
+      "org.gradle.dependency.bundling": "external",
+      "org.gradle.docstype": "sources",
+      "org.gradle.libraryelements": "jar",
+      "org.gradle.status": "release",
+      "org.gradle.usage": "java-runtime"
+    },
+    "files": [
+      {
+        "name": "forge-1.21.11-61.2.1-sources.jar",
+        "url": "forge-1.21.11-61.2.1-sources.jar",
+        "size": 9715274,
+        "sha1": "72255df1e7f0bfc3dcd28f50f08bdadc2ca475c9",
+        "sha256": "1881c70c08c2f8d44ba69e9e1a2b19d884dea783bb4f717f0520899c1c1ccf07",
+        "sha512": "b5eedaa2ca9c1d9f4141d6026deed293917580c0b1e3a3238721080259c297487b718defa5f92a1221d9b790b4d839d5235129c79b4ed794a58cf8bd5601584b",
+        "md5": "4b21fa5665f6fe4b0aff1fa2bff5bf6d"
+      }
+    ]
+  }
+]

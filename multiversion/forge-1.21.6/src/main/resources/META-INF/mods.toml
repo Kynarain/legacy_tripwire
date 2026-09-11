@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[0,)"
+license="MIT"
+
+[[mods]]
+modId="legacy_tripwire"
+version="1.0.0"
+displayName="Legacy Tripwire"
+authors="Kynarain"
+description='''Restores the pre-1.21.2 tripwire hook behaviour (reverting the MC-129055 / MC-59471 fix) so classic string duper machines work again.'''
+
+[[dependencies.legacy_tripwire]]
+    modId="forge"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.legacy_tripwire]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.21.6,1.22)"
+    ordering="NONE"
+    side="BOTH"

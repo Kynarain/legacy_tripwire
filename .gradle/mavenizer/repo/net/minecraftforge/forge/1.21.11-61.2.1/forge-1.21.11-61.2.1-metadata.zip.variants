@@ -1,0 +1,20 @@
+[
+  {
+    "name": "metadata",
+    "attributes": {
+      "org.gradle.status": "release",
+      "org.gradle.usage": "metadata"
+    },
+    "files": [
+      {
+        "name": "forge-1.21.11-61.2.1-metadata.zip",
+        "url": "forge-1.21.11-61.2.1-metadata.zip",
+        "size": 8067,
+        "sha1": "a770b652dd757ac00f48e11670a0893ea4bc3c55",
+        "sha256": "67d7420276b267f479be8b10a65a996739ba4d1bb93a7e317604c65949fdc213",
+        "sha512": "8513b48cb7aedcf82003be506a45c5af9f582eb31ded1c0ebe314b68403e8bd6ead48ab0e4499c419de36bdea5f8f85ec091c7b659f0c8ab1d97ea29313449c7",
+        "md5": "3134cc1bf7faba9dfdc7daebb680bfbd"
+      }
+    ]
+  }
+]

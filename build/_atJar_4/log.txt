@@ -1,0 +1,7 @@
+Java Launcher: C:\Program Files\Java\jdk-21\bin\java.exe
+Arguments: '--inJar, C:\Users\kynar\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.20.6-50.2.10\forge-1.20.6-50.2.10-injected.jar, --outJar, C:\Users\kynar\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.20.6-50.2.10_mapped_official_1.20.6\forge-1.20.6-50.2.10_mapped_official_1.20.6.jar, --logFile, accesstransform.log, --atFile, C:\Users\kynar\IdeaProjects\legacy_tripwire\build\_atJar_4\parent_at.cfg'
+Classpath:
+ - C:\Users\kynar\.gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\accesstransformers\8.2.14\accesstransformers-8.2.14-fatjar.jar
+Working directory: C:\Users\kynar\IdeaProjects\legacy_tripwire\build\_atJar_4
+Main class: net.minecraftforge.accesstransformer.TransformerProcessor
+====================================

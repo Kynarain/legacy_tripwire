@@ -1,0 +1,66 @@
+// Legacy Tripwire - ForgeGradle 7 workspace for Minecraft 1.21.11.
+// Modeled on the official MDK (https://github.com/MinecraftForge/MDKExamples) "mixins-only/fg7" example.
+
+plugins {
+    id 'java'
+    id 'idea'
+    id 'eclipse'
+    id 'net.minecraftforge.gradle' version '[7.0.23,8.0)'
+}
+
+version = mod_version
+group = mod_group_id
+base.archivesName = "${mod_id}-${minecraft_version}"
+
+// Mojang ships Java 21 to end users in 1.20.5+, so the mod targets Java 21.
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+minecraft {
+    // Since 1.20.6 Forge runs on Mojang official names, so no refmap is required for mixins.
+    mappings channel: 'official', version: minecraft_version
+
+    runs {
+        configureEach {
+            workingDir.convention layout.projectDirectory.dir('run')
+
+            systemProperty 'eventbus.api.strictRuntimeChecks', 'true'
+            systemProperty 'forge.enabledGameTestNamespaces', mod_id
+
+            // Mixin needs the config either on the command line or in the jar manifest.
+            args "--mixin.config=${mod_id}.mixins.json"
+        }
+
+        register('client')
+
+        register('server') {
+            args '--nogui'
+        }
+
+        register('gameTestServer')
+    }
+}
+
+repositories {
+    minecraft.mavenizer(it) // In Kotlin, it = this
+    maven fg.forgeMaven
+    maven fg.minecraftLibsMaven
+    mavenCentral()
+}
+
+dependencies {
+    implementation minecraft.dependency("net.minecraftforge:forge:${minecraft_version}-${forge_version}")
+
+    // Validates the mixin annotations at compile time.
+    annotationProcessor 'org.spongepowered:mixin:0.8.7:processor'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+tasks.named('jar', Jar) {
+    manifest {
+        // Makes Forge/Mixin pick up our mixin config when the mod is loaded from a jar.
+        attributes['MixinConfigs'] = "${mod_id}.mixins.json"
+    }
+}
